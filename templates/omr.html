@@ -1,0 +1,97 @@
+{% extends 'layout/panel_layout.html' %}
+
+{% block content %}
+<body>
+  <section class="optik-okutma">
+    <p class="title text-center mt-5 fw-bolder">OPTİK DEĞERLENDİRME</p>
+    <div class="container d-flex justify-content-center">
+      <div class=" ms-5 row">
+        <div class="col-auto">
+          <div class="card bg-light p-5">
+            <div class="card-body">
+              <form action="/analyze" method="POST" enctype="multipart/form-data" style="text-align: center;">
+                <div class="form-group mt-3" style="text-align: start;">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="imageCapture">Cevap Anahtarı:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="file" class="form-control-file" id="imageCapture" accept="image/*" name="cevap_anahtari" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3" style="margin-bottom: 41px!important;text-align: start;">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="imageCapture">Öğrenci Optik:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="file" class="form-control-file" id="imageCapture" accept="image/*" name="image" required>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-omr mt-4">GÖNDER</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  body {
+    background-color: #f8f9fa;
+  }
+ 
+  .form-group label {
+ 
+    font-size: 25px!important;
+    color: #606060!important;
+    font-weight: 400!important;
+}
+
+  .title {
+    color: #606060;
+    font-size: 50px;
+    margin-left: 45px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .card {
+    width: 860px;
+    height: 400px;
+    box-shadow: 7px 5px 27px #b4964152;
+    border: 1px solid #83935c;
+    margin-top: 2rem;
+  }
+
+  .form-group label {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .form-control {
+    background-color: #fff;
+  }
+
+  .btn-omr {margin: 0 auto;
+    position: relative;
+    right: 10pc!important;
+    cursor: pointer;
+    background: linear-gradient(45deg, #7ba48b, #355861);
+    border: none !important;
+    color: azure;
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 190px;
+  }
+</style>
+{% endblock %}

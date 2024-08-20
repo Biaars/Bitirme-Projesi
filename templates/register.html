@@ -1,0 +1,61 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+<div class="container my-3">
+    <div class="row d-flex justify-content-center align-items-center" style="height:78vh;">
+        <div class="col-md-6">
+            <div class="bg-light p-5">
+              <h1 class="text-center">ÜYE OL</h1>
+              {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                  <ul>
+                    {% for category, message in messages %}
+                      <li class="alert alert-{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endwith %}
+            
+              <form method="POST" action="{{ url_for('register') }}">
+                <div class="form-group">
+                  <label for="firstname">ADINIZ:</label>
+                  <input type="text" class="form-control w-100" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastname">SOYADINIZ:</label>
+                  <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                  <label for="username">KULLANICI ADINIZ:</label>
+                  <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-MAİL:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">PAROLANIZ:</label>
+                  <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <!-- <div class="form-group">
+                  <label for="confirm_password">Confirm Password:</label>
+                  <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                </div> -->
+                <button type="submit" class="btn btn-register mx-auto d-block mt-3">ÜYE OL</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+   .btn-register{
+    cursor: pointer;
+    background-color: #355861 !important;
+    border: none !important;
+    color:azure;
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+}
+</style>
+{% endblock %}

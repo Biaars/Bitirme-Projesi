@@ -1,0 +1,7 @@
+.btn-primary-custom {
+    /* Butonunuzun istediğiniz stil özelliklerini buraya ekleyebilirsiniz */
+    background-color: #d268cc;
+    border-color: #d268cc;
+    font-size: 20px;
+    padding: 10px 20px;
+}

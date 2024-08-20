@@ -1,0 +1,27 @@
+projeye başlamadan önce:
+
+Fikir: OMR
+Analiz & Araştırma
+Dökümantasyon(proje)
+    kağıt-kalem
+    temize çekmek
+
+
+Teknik Gereksinimler:
+
+Language: Python
+Framework: Flask Microframework
+Architecture: Web Application
+
+    Restfull - microservice
+
+        Server (Back-end): Flask
+                        Database
+                        JSON XML
+        Client(Front-end): Html, Css, Bootsrap, js
+
+    Web Application: 
+
+        Server(Back-end)
+            Back-end: Python - flask
+            Front-end: React.js

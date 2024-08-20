@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+
+    <title>My Project</title>
+</head>
+
+<body>
+    <!-- navbar area start-->
+    <div class="container-fluid m-0">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 pe-sm-2 px-0">
+                {% include '_sidebar.html' %}
+            </div>
+            <div class="col-auto py-3" style="margin: 0 auto;">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <!-- navbar area end-->
+    <!-- footer area start-->
+    
+    <!-- footer area end-->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

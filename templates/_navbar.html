@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand logo" href="/"><img src="/static/img/logo.png" alt="logo" style="width:auto; height:50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto  mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about"> HAKKIMIZDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#features"> ÖZELLİKLER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#technical"> TEKNİK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">İLETİŞİM</a>
+                </li>
+            </ul>
+            <button class="btn" type="submit" onclick="window.location.href='/login';">
+                <i class="fas fa-user-circle" style="color: #355861; font-size: 35px;"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<style>
+    
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border-color: #f8f9fa !important;
+}
+.nav-link {
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+</style>

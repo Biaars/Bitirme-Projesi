@@ -1,0 +1,260 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+<!-- banner area start -->
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto d-block">
+                <h2 class="title ms-5 mb-4">OMR</h2>
+                <p class=" desc mx-5">optik sınav kağıtlarını gerçek zamanlı olarak analiz eden ve sınav sonuçlarını
+                    hesaplayan bir proje tasarladık. Bu projemiz, görüntü işleme tekniklerini kullanarak size en iyi
+                    deneyimi sunmayı amaçlamaktadır. Daha fazla bilgi için web sitemizi detaylı inceleyin.</p>
+                <a href="/login" class="btn btn-custom ms-5 text-center  my-1">İNCELE</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/dash_img.jpg') }}" alt="OMR Görseli"
+                    class="img-fluid m-auto d-block">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner area end -->
+<!-- features area start-->
+<section id="features" class="py-3">
+    <div style="margin-top: 130px; ">
+        <div class="container my-5">
+            <h2 class="title fw-bolder text-center m-lg-5">NEDEN <span style="color:#d268cc">REG TEKNOLOJİSİ</span>
+                KULLANMALIYIZ?</h2>
+            <div class="row row-cols-1 row-cols-md-3 my-lg-5 d-flex justify-content-center ">
+                <div class="col-md-4 mb-sm-5">
+                    <div class="card mb-4 mx-4 rounded-3 shadow-sm ">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-center">Optik Sınav Kağıtlarını<br><span>Otomatik Analiz
+                                    Edin</span></h4>
+                        </div>
+                        <div class="card-body mx-2">
+                            <p class="desc">
+                                Optik işaret tanıma (OMR) gibi tekniklerle sınav cevaplarını okuyarak doğru/yanlış
+                                değerlerini belirleyerek sınav sonuçlarını otomatik olarak hesaplar. Bu özellik,
+                                değerlendirmenin yerini alarak zaman ve iş gücü tasarrufu sağlar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mx-4 rounded-3 shadow-sm ">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-center">Her Yerden Erişilebilen<br><span>Sınav
+                                    Sonuçları</span></h4>
+                        </div>
+                        <div class="card-body mx-2">
+                            <p class="desc">
+                                Kullanıcıların herhangi bir cihazdan sınav sonuçlarına erişebildiği web tabanlı bir
+                                uygulamadır. Eğitim kurumları ve öğretmenler kolaylıkla değerlendirmeleri
+                                takip edebilir. Kullanıcı dostu arayüzüyle erişilebilir bir deneyim sunar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mx-4 rounded-3 shadow-sm ">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-center">Hızlı ve Doğru Sonuçlar İçin<br><span>Otomatik
+                                    Hesaplama</span></h4>
+                        </div>
+                        <div class="card-body mx-2">
+                            <p class="desc">
+                                Sınav sonuçlarını otomatik olarak hesaplama özelliğine sahiptir. Optik sınav kağıtlarını
+                                analiz ederek doğru/yanlış cevapları belirler ve öğrencilerin puanlarını hesaplar. Bu
+                                sayede hızlı, doğru ve tutarlı sonuçlar elde edilmesini sağlar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- production area end-->
+
+<!-- technical area start-->
+<section id="about" class="pt-5">
+    <div class="container ">
+        <h2 class=" title text-center fw-bolder">ÖNE ÇIKAN <span style="color: #d268cc;">ÖZELLİKLER</span></h2>
+        <div class="row ">
+            <div class="col-md-7 m-auto">
+                <h4 class=" fw-bold sub-title">Optik Sınav Kağıtlarını<br><span class="span-title">Otomatik Analiz
+                        Edin</span></h4>
+                <p class="lead mt-1">
+                    Görüntü işleme tekniklerini kullanarak sınav kağıtlarını analiz eder. Optik karakter tanıma
+                    (OCR) gibi tekniklerle, kağıttaki cevapları okuyup doğru/yanlış değerlerini belirleyerek
+                    sınav sonuçlarını otomatik olarak hesaplar. Bu özellik, manuel değerlendirmenin yerini
+                    alarak zaman ve iş gücü tasarrufu sağlar.
+                </p>
+            </div>
+            <div class="col-md-5 m-auto">
+                <img src="{{ url_for('static', filename='img/product_01.png') }}" alt="works" width="100%"
+                    height="100%">
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-7 order-md-2">
+                <h4 class=" fw-bold sub-title"> Her Yerden Erişilebilen<br><span class="span-title">Sınav
+                        Sonuçları</span></h4>
+                <p class="lead mt-3">
+                    Kullanıcıların herhangi bir web tarayıcısı üzerinden erişebilecekleri bir web tabanlı
+                    uygulama olarak tasarlanmıştır. Bu sayede eğitim kurumları, öğretmenler veya öğrenciler,
+                    herhangi bir cihazdan (bilgisayar, tablet, mobil telefon) sınav sonuçlarına erişebilir ve
+                    değerlendirmeleri takip edebilir. Kullanıcı dostu arayüzü sayesinde kolaylıkla
+                    kullanılabilir ve erişilebilir bir deneyim sunar.
+                </p>
+            </div>
+            <div class="col-md-5 m-auto">
+                <img src="{{ url_for('static', filename='img/product_02.png') }}" alt="works" width="90%" height="90%">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7 m-auto">
+                <h4 class="fw-bold sub-title">Hızlı ve Doğru Sonuçlar İçin<br><span class="span-title">Otomatik
+                        Hesaplama</span></h4>
+                <p class="lead mt-3">Sınav sonuçlarını otomatik olarak hesaplama özelliğine sahiptir. Optik sınav
+                    kağıtlarını
+                    analiz ederek doğru/yanlış cevapları belirler ve öğrencilerin puanlarını hesaplar. Böylece
+                    manuel puanlama sürecini ortadan kaldırır ve hızlı, doğru ve tutarlı sonuçlar elde
+                    edilmesini sağlar.</p>
+            </div>
+            <div class="col-md-5 m-auto">
+                <img src="{{ url_for('static', filename='img/product_03.png') }}" alt="works" width="100%"
+                    height="100%">
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- features area end-->
+
+<!-- contact area start-->
+<section id="contact">
+    <hr class="featurette-divider mt-5">
+
+    <div class="container mt-5">
+        <h2 class=" title text-center"> <span style="color:#d268cc">REG</span> PROJE EKİBİ</h2>
+        <div class="row row-cols-1 row-cols-md-3 my-5 text-center">
+            <div class="col-lg-4">
+                <img src="https://avatars.githubusercontent.com/u/72947376?v=4" alt="OMR Görseli"
+                    class="img-fluid m-auto d-block rounded-circle" width="40%">
+                <div class="d-flex flex-column">
+                    <h2>Rabia Arslan</h2>
+                    
+                    <p>
+                        <a class="btn btn-contact btn-circle" href="https://www.linkedin.com/in/rabiaarslan/"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-contact btn-circle" href="https://github.com/Biaars" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-contact btn-circle" href="mailto:developer1@example.com"><i
+                                class="far fa-envelope"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://avatars.githubusercontent.com/u/94790468?v=4" alt="OMR Görseli"
+                    class="img-fluid m-auto d-block rounded-circle" width="40%">
+                <div class="d-flex flex-column text-center">
+                    <h2>M. Emirhan Türkmen</h2>
+                   
+                    <p>
+                        <a class="btn btn-contact btn-circle"
+                            href="https://www.linkedin.com/in/emirhan-t%C3%BCrkmen-553542226/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-contact btn-circle" href="https://github.com/emirhan-turkmen"
+                            target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-contact btn-circle" href="mailto:developer1@example.com"><i
+                                class="far fa-envelope"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://avatars.githubusercontent.com/u/76570241?v=4" alt="OMR Görseli"
+                    class="img-fluid m-auto d-block rounded-circle" width="40%">
+                <div class="d-flex flex-column text-center">
+                    <h2>Güldoğan Verdi</h2>
+                   
+                    <p>
+                        <a class="btn btn-contact btn-circle"
+                            href="https://www.linkedin.com/in/g%C3%BCldo%C4%9Fan-verdi/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-contact btn-circle" href="https://github.com/guldogan" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-contact btn-circle" href="mailto:developer1@example.com"><i
+                                class="far fa-envelope"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact area end-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    h2.title {
+        font-family: 'Bruno Ace SC', cursive;
+    }
+
+    p.desc,
+    h4.sub-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .btn-custom {
+        font: normal normal 600 25px/29px Montserrat !important;
+        width: 170px;
+        height: 47px;
+        --bs-btn-color: rgb(250, 241, 248);
+        --bs-btn-bg: #355861 !important;
+        --bs-btn-border-color: #355861 !important;
+    }
+
+    .btn-custom:hover {
+        background: #3a6773;
+        color: #fff;
+    }
+
+    .banner h2 {
+        margin-bottom: 13px;
+        font-size: 50px;
+        color: #333;
+    }
+
+    .banner p {
+        margin-bottom: 22px !important;
+        color: #777;
+    }
+
+    .span-title {
+        color: #497985;
+        font-size: 32px;
+    }
+    .btn-contact {
+        background-color: #355861;
+        color: #fff;
+        border-radius: 50%;
+        margin: 5px;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-contact:hover {
+        background-color: #3a6773;
+        color: #fff;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'layout/panel_layout.html' %}
+{% block content %}
+<div class="m-auto">
+  <div class="container">
+    <div class="table-responsive d-flex justify-content-center">
+      <table class="table">
+        <thead>
+          <tr style="font-size:25px!important;">
+            <th style="padding: 0.5rem 2.5rem!important;">ID</th>
+            <th style="padding: 0.5rem 2.5rem!important;">Öğrenci No</th>
+            <th style="padding: 0.5rem 2.5rem!important;">Doğru</th>
+            <th style="padding: 0.5rem 2.5rem!important;">Yanlış</th>
+            <th style="padding: 0.5rem 2.5rem!important;">Kurum Kodu</th>
+            <th style="padding: 0.5rem 2.5rem!important;">Sınav Kodu</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if note_list %}
+          {% for note in note_list %}
+          <tr>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.id }}</td>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.studentNo }}</td>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.dogrular }}</td>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.yanlislar }}</td>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.kurumNo }}</td>
+            <td style="padding: 0.5rem 2.5rem!important;">{{ note.sinavNo }}</td>
+          </tr>
+          {% endfor %}
+          {% else %}
+          <tr>
+            <td colspan="6">Listede eleman bulunamadı.</td>
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+    {% if show_button %}
+    <form action="/delete-note" method="POST">
+      <button type="submit" class="btn btn-danger">Tüm Notları Sil</button>
+    </form>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
